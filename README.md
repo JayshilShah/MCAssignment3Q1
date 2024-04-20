@@ -3,20 +3,28 @@
 The Sensing App is an Android application that utilizes the device's accelerometer and gyroscope sensors to track and record orientation data (roll, pitch, and yaw). The app provides a graphical representation of the orientation data over time and saves the data to a Room database.
 
 ## Features
-### Real-time Orientation Tracking: The app listens to the device's accelerometer and gyroscope sensors and calculates roll, pitch, and yaw in real-time.
-### Graphical Data Visualization: Orientation data is displayed graphically using line charts, allowing the user to easily observe changes in roll, pitch, and yaw over time.
-### Data Storage: Orientation data is stored in a local Room database, enabling historical data tracking and analysis.
-### Data Export: Exporting orientation data to a CSV file (currently commented out in the code).
+### Real-time Orientation Tracking: 
+The app listens to the device's accelerometer and gyroscope sensors and calculates roll, pitch, and yaw in real-time.
+### Graphical Data Visualization: 
+Orientation data is displayed graphically using line charts, allowing the user to easily observe changes in roll, pitch, and yaw over time.
+### Data Storage:
+Orientation data is stored in a local Room database, enabling historical data tracking and analysis.
+### Data Export: 
+Exporting orientation data to a CSV file (currently commented out in the code).
 ## Architecture
-### MainActivity: Manages sensor events and orientation calculations. Displays orientation data and manages navigation.
-### HistoryActivity: Displays orientation data graphs using MPAndroidChart.
-### AppDatabase: Defines the Room database, including the OrientationDataDao data access object.
-### MainViewModel: Manages the live data of orientation data and handles data insertion and retrieval.
+### MainActivity: 
+Manages sensor events and orientation calculations. Displays orientation data and manages navigation.
+### HistoryActivity: 
+Displays orientation data graphs using MPAndroidChart.
+### AppDatabase: 
+Defines the Room database, including the OrientationDataDao data access object.
+### MainViewModel: 
+Manages the live data of orientation data and handles data insertion and retrieval.
 ## Technologies Used
-### Android Jetpack Components: Including Room, ViewModel, and LiveData.
-### MPAndroidChart: For graph visualization.
-### Kotlin: As the primary programming language for the project.
-### Compose: For the user interface design and layout.
+Android Jetpack Components: Including Room, ViewModel, and LiveData.
+MPAndroidChart: For graph visualization.
+Kotlin: As the primary programming language for the project.
+Compose: For the user interface design and layout.
 ## Setup and Installation
 ### Clone this repository:
 shell
